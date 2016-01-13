@@ -3,14 +3,19 @@ $(document).ready(function() {
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
 
-    var name = ();
+
     if ((gender === 'male') && (age < 100) && (age > 60)) {
-      name = Cristie Brinkley
+      $('#male60').show();
       }
-
-      $("#name1").text(name);
-      $("#male60").show();
-
+      if ((gender === 'male') && (age < 60) && (age > 20)) {
+        $('#male20').show();
+        }
+        if ((gender === 'female') && (age < 100) && (age > 60)) {
+          $('#female60').show();
+          }
+          if ((gender === 'female') && (age < 60) && (age > 20)) {
+            $('#female20').show();
+            }
     event.preventDefault();
 
   });
