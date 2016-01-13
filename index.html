@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Celebrity Dating</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find Your Celebrity Match!</h1>
+
+      <p>Fill in the form below to identify your best celebrity match:</p>
+
+      <form id="match">
+        <label for="age">Age</label>
+        <input id="age" type="text">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+
+        <button type="submit" class="btn">Who is Your Match?</button>
+      </form>
+
+      <div id="male20">
+        <h1>Here is your top celebrity match:</h1>
+            <p> <span id="name"></span></p>
+      </div>
+      <div id="male60">
+        <h1>Here is your top celebrity match:</h1>
+            <p> <img src="img/rd.jpeg"> <span id="name"></span></p>
+      </div>
+      <div id="female20">
+        <h1>Here is your top celebrity match:</h1>
+            <p> <span id="name"></span></p>
+      </div>
+      <div id="female60">
+        <h1>Here is your top celebrity match:</h1>
+            <p> <span id="name"></span></p>
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
